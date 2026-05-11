@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Clover Hacks Sponsorship Packet</title>
+    <style>
+      :root {
+        --green: #2f9e5e;
+        --green-light: #e8f7ee;
+        --ink: #0e1a14;
+        --muted: #5a6e63;
+        --line: #d6e3da;
+      }
+      * { box-sizing: border-box; }
+      html, body {
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+        color: var(--ink);
+        background: #ffffff;
+        line-height: 1.5;
+      }
+      .wrap {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 56px 48px;
+      }
+      header {
+        border-bottom: 2px solid var(--ink);
+        padding-bottom: 24px;
+        margin-bottom: 32px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+      .logo { width: 56px; height: 64px; color: var(--green); }
+      h1 {
+        font-size: 28px;
+        margin: 0;
+        letter-spacing: -0.01em;
+      }
+      .tagline {
+        color: var(--muted);
+        font-size: 14px;
+        margin-top: 2px;
+      }
+      h2 {
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: var(--green);
+        margin: 32px 0 12px;
+      }
+      .intro p {
+        margin: 0 0 12px;
+        color: var(--muted);
+      }
+      .meta {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        margin-top: 16px;
+      }
+      .meta div {
+        border: 1px solid var(--line);
+        padding: 12px 14px;
+        border-radius: 8px;
+      }
+      .meta dt {
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--muted);
+      }
+      .meta dd {
+        margin: 4px 0 0;
+        font-weight: 600;
+        font-size: 14px;
+      }
+      .tier {
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 20px 22px;
+        margin-bottom: 14px;
+        page-break-inside: avoid;
+      }
+      .tier-head {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+      .tier-name {
+        font-weight: 700;
+        font-size: 18px;
+      }
+      .tier-price {
+        color: var(--green);
+        font-weight: 700;
+        font-size: 16px;
+      }
+      .tier ul {
+        margin: 0;
+        padding-left: 18px;
+        color: var(--ink);
+      }
+      .tier li {
+        margin-bottom: 4px;
+      }
+      footer {
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 1px solid var(--line);
+        font-size: 13px;
+        color: var(--muted);
+      }
+      footer a { color: var(--green); text-decoration: none; }
+      @media print {
+        .wrap { padding: 24px 32px; }
+        body { font-size: 12px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <svg class="logo" viewBox="0 0 100 115" aria-hidden>
+          <path d="M52 56 Q 47 78 60 108" stroke="currentColor" stroke-width="5" stroke-linecap="round" fill="none"/>
+          <g fill="currentColor">
+            <path transform="rotate(45 50 50)" d="M50 50 C 35 50, 22 40, 22 25 C 22 12, 36 5, 48 15 Q 50 18, 52 15 C 64 5, 78 12, 78 25 C 78 40, 65 50, 50 50 Z"/>
+            <path transform="rotate(135 50 50)" d="M50 50 C 35 50, 22 40, 22 25 C 22 12, 36 5, 48 15 Q 50 18, 52 15 C 64 5, 78 12, 78 25 C 78 40, 65 50, 50 50 Z"/>
+            <path transform="rotate(225 50 50)" d="M50 50 C 35 50, 22 40, 22 25 C 22 12, 36 5, 48 15 Q 50 18, 52 15 C 64 5, 78 12, 78 25 C 78 40, 65 50, 50 50 Z"/>
+            <path transform="rotate(315 50 50)" d="M50 50 C 35 50, 22 40, 22 25 C 22 12, 36 5, 48 15 Q 50 18, 52 15 C 64 5, 78 12, 78 25 C 78 40, 65 50, 50 50 Z"/>
+          </g>
+        </svg>
+        <div>
+          <h1>Clover Hacks Sponsorship Packet</h1>
+          <div class="tagline">A one-day high school hackathon. September 19, 2026.</div>
+        </div>
+      </header>
+
+      <section class="intro">
+        <h2>About</h2>
+        <p>Clover Hacks is a one-day high school hackathon where builders, designers, and dreamers come together to ship something worth bragging about. Sponsors keep it free for students, fund the prizes, and get face time with the next wave of engineers.</p>
+        <dl class="meta">
+          <div><dt>When</dt><dd>September 19, 2026</dd></div>
+          <div><dt>Hours</dt><dd>9 AM to 10 PM</dd></div>
+          <div><dt>Audience</dt><dd>High school students</dd></div>
+        </dl>
+      </section>
+
+      <section>
+        <h2>Sponsorship Tiers</h2>
+
+        <div class="tier">
+          <div class="tier-head">
+            <span class="tier-name">Diamond</span>
+            <span class="tier-price">$1,500 to $2,000</span>
+          </div>
+          <ul>
+            <li>Premium logo placement on website, shirts, and venue signage</li>
+            <li>Keynote slot during opening ceremony (5 minutes)</li>
+            <li>Dedicated booth at the project expo</li>
+            <li>Custom sponsor track and prize category</li>
+            <li>Resume access to all participants</li>
+          </ul>
+        </div>
+
+        <div class="tier">
+          <div class="tier-head">
+            <span class="tier-name">Gold</span>
+            <span class="tier-price">$1,000 to $1,499</span>
+          </div>
+          <ul>
+            <li>Logo on website, shirts, and venue signage</li>
+            <li>Booth at the project expo</li>
+            <li>Sponsor prize category</li>
+            <li>Resume access to all participants</li>
+          </ul>
+        </div>
+
+        <div class="tier">
+          <div class="tier-head">
+            <span class="tier-name">Silver</span>
+            <span class="tier-price">$500 to $999</span>
+          </div>
+          <ul>
+            <li>Logo on website and venue signage</li>
+            <li>Shared booth time at expo</li>
+            <li>Optional sponsor prize</li>
+            <li>Mention during opening ceremony</li>
+          </ul>
+        </div>
+
+        <div class="tier">
+          <div class="tier-head">
+            <span class="tier-name">Supporter</span>
+            <span class="tier-price">$100 to $499</span>
+          </div>
+          <ul>
+            <li>Logo on website</li>
+            <li>Shoutout on social media</li>
+            <li>Mention during closing ceremony</li>
+          </ul>
+        </div>
+      </section>
+
+      <footer>
+        Get in touch: <a href="mailto:sponsors@cloverhacks.org?subject=Sponsorship%20Inquiry">sponsors@cloverhacks.org</a>
+        &nbsp;·&nbsp; cloverhacks.org
+      </footer>
+    </div>
+  </body>
+</html>

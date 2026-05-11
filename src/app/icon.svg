@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <path d="M52 50 Q 47 70 60 92" stroke="#34d27a" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <g fill="#34d27a">
+    <path transform="rotate(45 50 45)" d="M50 45 C 33 45, 18 35, 18 19 C 18 5, 34 -2, 48 9 Q 50 12, 52 9 C 66 -2, 82 5, 82 19 C 82 35, 67 45, 50 45 Z"/>
+    <path transform="rotate(135 50 45)" d="M50 45 C 33 45, 18 35, 18 19 C 18 5, 34 -2, 48 9 Q 50 12, 52 9 C 66 -2, 82 5, 82 19 C 82 35, 67 45, 50 45 Z"/>
+    <path transform="rotate(225 50 45)" d="M50 45 C 33 45, 18 35, 18 19 C 18 5, 34 -2, 48 9 Q 50 12, 52 9 C 66 -2, 82 5, 82 19 C 82 35, 67 45, 50 45 Z"/>
+    <path transform="rotate(315 50 45)" d="M50 45 C 33 45, 18 35, 18 19 C 18 5, 34 -2, 48 9 Q 50 12, 52 9 C 66 -2, 82 5, 82 19 C 82 35, 67 45, 50 45 Z"/>
+  </g>
+</svg>

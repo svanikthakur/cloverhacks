@@ -20,9 +20,9 @@ const mono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://cloverhacks.org"),
-  title: "Clover Hacks — Get Lucky. Build Something.",
+  title: "Clover Hacks: Get Lucky. Build Something.",
   description:
-    "Clover Hacks is a one-day student hackathon where builders, designers, and dreamers come together to ship something worth bragging about.",
+    "Clover Hacks is a one-day high school hackathon where builders, designers, and dreamers come together to ship something worth bragging about.",
   openGraph: {
     title: "Clover Hacks",
     description:

@@ -53,7 +53,7 @@ export function Hero() {
         </h1>
 
         <p className="mt-6 mx-auto max-w-2xl text-lg md:text-xl text-muted">
-          Clover Hacks is a one-day student hackathon where 200+ builders, designers,
+          Clover Hacks is a one-day high school hackathon where builders, designers,
           and dreamers come together to ship something worth bragging about.
         </p>
 

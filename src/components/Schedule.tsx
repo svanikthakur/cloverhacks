@@ -12,7 +12,7 @@ export function Schedule() {
             One day, packed.
           </h2>
           <p className="mt-4 text-muted text-lg">
-            Tentative — the only thing guaranteed is the food and the chaos.
+            Tentative. The only thing guaranteed is the food and the chaos.
           </p>
         </div>
 

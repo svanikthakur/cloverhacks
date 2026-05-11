@@ -1,11 +1,11 @@
 const POINTS = [
   {
     title: "Built for first-timers",
-    body: "Mentors on-call, beginner workshops, and a dedicated track so your first hackathon doesn't feel like jumping into the deep end.",
+    body: "Beginner workshops, a dedicated track, and a friendlier judging rubric so your first hackathon doesn't feel like jumping into the deep end.",
   },
   {
     title: "Zero cost, all in",
-    body: "Free admission, food, swag, and travel reimbursement for select teams. Just bring your laptop and your ideas.",
+    body: "Free admission, food, and swag. Just bring your laptop and your ideas.",
   },
   {
     title: "Ship something real",
@@ -27,7 +27,7 @@ export function About() {
             </h2>
             <p className="mt-6 text-muted text-lg leading-relaxed">
               Most hackathons feel like a sprint. Clover Hacks is more like a tiny
-              festival — one day of building, eating, occasional panicking,
+              festival. One day of building, eating, occasional panicking,
               and meeting the kind of people who say &ldquo;wait, what if we just&hellip;&rdquo;
               and mean it.
             </p>
