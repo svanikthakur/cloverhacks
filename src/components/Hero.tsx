@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import { Clover } from "./Clover";
 import { EVENT } from "@/lib/event";
 
@@ -25,15 +26,14 @@ export function Hero() {
           key={i}
           size={c.size}
           className="absolute text-clover animate-float pointer-events-none"
-          // @ts-expect-error custom CSS var for keyframe rotation
           style={{
             top: c.top,
             left: c.left,
             opacity: c.opacity,
             animationDelay: c.delay,
-            "--r": `${c.rotate}deg`,
+            ["--r" as string]: `${c.rotate}deg`,
             transform: `rotate(${c.rotate}deg)`,
-          }}
+          } as CSSProperties}
         />
       ))}
 
