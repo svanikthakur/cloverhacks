@@ -96,8 +96,8 @@ export function Sponsors() {
 
             <div className="mt-6 flex flex-col sm:flex-row gap-3">
               <a
-                href="/sponsorship-packet.html"
-                download="CloverHacks-Sponsorship-Packet.html"
+                href="/sponsorship-packet.pdf"
+                download="CloverHacks-Sponsorship-Packet.pdf"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-clover text-[#06160e] px-5 py-2.5 text-sm font-semibold hover:bg-clover/90 transition-colors"
               >
                 Download packet

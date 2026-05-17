@@ -21,105 +21,104 @@
         background: #ffffff;
         line-height: 1.5;
       }
+      @page { size: Letter; margin: 0; }
       .wrap {
         max-width: 760px;
         margin: 0 auto;
-        padding: 56px 48px;
+        padding: 32px 40px;
       }
       header {
         border-bottom: 2px solid var(--ink);
-        padding-bottom: 24px;
-        margin-bottom: 32px;
+        padding-bottom: 14px;
+        margin-bottom: 16px;
         display: flex;
         align-items: center;
-        gap: 16px;
+        gap: 14px;
       }
-      .logo { width: 56px; height: 64px; color: var(--green); }
+      .logo { width: 44px; height: 50px; color: var(--green); }
       h1 {
-        font-size: 28px;
+        font-size: 22px;
         margin: 0;
         letter-spacing: -0.01em;
       }
       .tagline {
         color: var(--muted);
-        font-size: 14px;
+        font-size: 12px;
         margin-top: 2px;
       }
       h2 {
-        font-size: 13px;
+        font-size: 11px;
         text-transform: uppercase;
         letter-spacing: 0.12em;
         color: var(--green);
-        margin: 32px 0 12px;
+        margin: 14px 0 8px;
       }
       .intro p {
-        margin: 0 0 12px;
+        margin: 0 0 8px;
         color: var(--muted);
+        font-size: 12px;
       }
       .meta {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 12px;
-        margin-top: 16px;
+        gap: 8px;
+        margin-top: 10px;
       }
       .meta div {
         border: 1px solid var(--line);
-        padding: 12px 14px;
-        border-radius: 8px;
+        padding: 8px 10px;
+        border-radius: 6px;
       }
       .meta dt {
-        font-size: 11px;
+        font-size: 9px;
         text-transform: uppercase;
         letter-spacing: 0.1em;
         color: var(--muted);
       }
       .meta dd {
-        margin: 4px 0 0;
+        margin: 2px 0 0;
         font-weight: 600;
-        font-size: 14px;
+        font-size: 12px;
       }
       .tier {
         border: 1px solid var(--line);
-        border-radius: 10px;
-        padding: 20px 22px;
-        margin-bottom: 14px;
+        border-radius: 8px;
+        padding: 10px 14px;
+        margin-bottom: 8px;
         page-break-inside: avoid;
       }
       .tier-head {
         display: flex;
         align-items: baseline;
         justify-content: space-between;
-        margin-bottom: 10px;
+        margin-bottom: 4px;
       }
       .tier-name {
         font-weight: 700;
-        font-size: 18px;
+        font-size: 14px;
       }
       .tier-price {
         color: var(--green);
         font-weight: 700;
-        font-size: 16px;
+        font-size: 13px;
       }
       .tier ul {
         margin: 0;
-        padding-left: 18px;
+        padding-left: 16px;
         color: var(--ink);
+        font-size: 11.5px;
       }
       .tier li {
-        margin-bottom: 4px;
+        margin-bottom: 1px;
       }
       footer {
-        margin-top: 40px;
-        padding-top: 20px;
+        margin-top: 16px;
+        padding-top: 10px;
         border-top: 1px solid var(--line);
-        font-size: 13px;
+        font-size: 11px;
         color: var(--muted);
       }
       footer a { color: var(--green); text-decoration: none; }
-      @media print {
-        .wrap { padding: 24px 32px; }
-        body { font-size: 12px; }
-      }
     </style>
   </head>
   <body>
