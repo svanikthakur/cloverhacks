@@ -1,21 +1,27 @@
 import type { Metadata } from "next";
-import { Inter, Space_Grotesk, JetBrains_Mono } from "next/font/google";
+import { Bricolage_Grotesque, Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const sans = Inter({
+const sans = Bricolage_Grotesque({
   variable: "--font-sans",
   subsets: ["latin"],
+  fallback: ["sans-serif"],
+  adjustFontFallback: false,
 });
 
 const display = Space_Grotesk({
   variable: "--font-display",
   subsets: ["latin"],
   weight: ["500", "600", "700"],
+  fallback: ["sans-serif"],
+  adjustFontFallback: false,
 });
 
 const mono = JetBrains_Mono({
   variable: "--font-mono",
   subsets: ["latin"],
+  fallback: ["ui-monospace", "monospace"],
+  adjustFontFallback: false,
 });
 
 export const metadata: Metadata = {

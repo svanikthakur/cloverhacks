@@ -38,15 +38,7 @@ export function Hero() {
       ))}
 
       <div className="relative mx-auto max-w-6xl px-6 pt-24 pb-32 md:pt-32 md:pb-40 text-center">
-        <div className="inline-flex items-center gap-2 rounded-full border border-clover/30 bg-clover/10 px-3 py-1 text-xs font-medium text-clover">
-          <span className="relative flex h-2 w-2">
-            <span className="absolute inline-flex h-full w-full rounded-full bg-clover animate-ping-slow" />
-            <span className="relative inline-flex h-2 w-2 rounded-full bg-clover" />
-          </span>
-          Applications open soon
-        </div>
-
-        <h1 className="mt-6 font-display text-5xl md:text-7xl lg:text-8xl font-semibold tracking-tight leading-[1.05]">
+        <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-semibold tracking-tight leading-[1.05]">
           <span className="text-gradient">Get Lucky.</span>
           <br />
           Build Something.

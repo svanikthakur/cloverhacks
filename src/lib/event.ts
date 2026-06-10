@@ -3,9 +3,9 @@ export const EVENT = {
   tagline: "Get Lucky. Build Something.",
   startsAt: "2026-09-19T09:00:00-04:00",
   endsAt: "2026-09-19T22:00:00-04:00",
-  location: "TBD",
+  location: "Bay Area, California",
   durationLabel: "13 hours",
-  applyUrl: "#register",
+  applyUrl: "/register",
   socials: {
     instagram: "https://instagram.com/",
     discord: "#",

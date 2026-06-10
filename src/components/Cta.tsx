@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Clover } from "./Clover";
 import { EVENT } from "@/lib/event";
 
@@ -21,31 +22,21 @@ export function Cta() {
           Ready to find out how lucky you are?
         </h2>
         <p className="relative mt-4 text-muted text-lg max-w-xl mx-auto">
-          Apps open soon. Drop your email and we&apos;ll be the first to tell you.
+          Registration is open. Grab your spot — it&apos;s free, and it only takes a minute.
         </p>
 
-        <form
-          className="relative mt-8 mx-auto flex flex-col sm:flex-row gap-3 max-w-md"
-          action="#"
-          method="post"
-        >
-          <input
-            required
-            type="email"
-            name="email"
-            placeholder="you@school.edu"
-            className="flex-1 rounded-full bg-background border border-white/15 px-5 py-3 text-foreground placeholder:text-muted/70 focus:outline-none focus:border-clover transition-colors"
-          />
-          <button
-            type="submit"
-            className="rounded-full bg-clover text-[#06160e] px-6 py-3 font-semibold hover:bg-clover/90 transition-colors"
+        <div className="relative mt-8 flex justify-center">
+          <Link
+            href={EVENT.applyUrl}
+            className="inline-flex items-center gap-2 rounded-full bg-clover text-[#06160e] px-8 py-3.5 font-semibold hover:bg-clover/90 transition-colors shadow-[0_0_40px_-8px_var(--clover-glow)]"
           >
-            Notify me
-          </button>
-        </form>
+            Register now
+            <span aria-hidden>→</span>
+          </Link>
+        </div>
 
         <p className="relative mt-3 text-xs text-muted">
-          No spam. Just one email when applications open.
+          Free for all high school students. Food and swag included.
         </p>
 
         <a
