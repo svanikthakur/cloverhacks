@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Clover } from "./Clover";
-import { EVENT } from "@/lib/event";
+import { event } from "@/lib/event";
 
 export function Cta() {
   return (
@@ -22,12 +22,12 @@ export function Cta() {
           Ready to find out how lucky you are?
         </h2>
         <p className="relative mt-4 text-muted text-lg max-w-xl mx-auto">
-          Registration is open. Grab your spot — it&apos;s free, and it only takes a minute.
+          Sign-ups are open and it&apos;s completely free. Grabbing a spot takes about a minute.
         </p>
 
         <div className="relative mt-8 flex justify-center">
           <Link
-            href={EVENT.applyUrl}
+            href={event.applyUrl}
             className="inline-flex items-center gap-2 rounded-full bg-clover text-[#06160e] px-8 py-3.5 font-semibold hover:bg-clover/90 transition-colors shadow-[0_0_40px_-8px_var(--clover-glow)]"
           >
             Register now
@@ -40,7 +40,7 @@ export function Cta() {
         </p>
 
         <a
-          href={EVENT.socials.email}
+          href={event.socials.email}
           className="relative mt-6 inline-block text-sm text-muted hover:text-foreground transition-colors"
         >
           Or reach the team directly →

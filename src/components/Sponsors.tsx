@@ -1,4 +1,4 @@
-import { SPONSORSHIP_PACKAGES } from "@/lib/event";
+import { sponsorshipPackages } from "@/lib/event";
 
 const MAILTO =
   "mailto:sponsors@cloverhacks.org?subject=Sponsorship%20Inquiry";
@@ -49,8 +49,8 @@ export function Sponsors() {
             Want your logo here?
           </h2>
           <p className="mt-4 text-muted">
-            We partner with companies who care about high schoolers building real things.
-            Click any open slot to start the conversation.
+            We work with companies that want to back high schoolers building real things.
+            Tap any open slot and say hi.
           </p>
         </div>
 
@@ -69,7 +69,7 @@ export function Sponsors() {
 
           <div className="px-6 pb-6 pt-2 border-t border-white/5">
             <ul className="space-y-4 mt-4">
-              {SPONSORSHIP_PACKAGES.map((pkg) => (
+              {sponsorshipPackages.map((pkg) => (
                 <li
                   key={pkg.name}
                   className="rounded-xl border border-white/10 bg-background/50 p-5"

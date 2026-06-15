@@ -2,7 +2,6 @@ import { isAdmin } from "@/lib/auth";
 import { getSignups, type Signup } from "@/lib/signups";
 
 function csvCell(value: string): string {
-  // Quote and escape per RFC 4180.
   return `"${value.replace(/"/g, '""')}"`;
 }
 

@@ -1,7 +1,5 @@
 import { createClient } from "@supabase/supabase-js";
 
-// Server-only client. Uses the service_role key, so it bypasses row-level
-// security — never import this into client components or expose the key.
 const url = process.env.SUPABASE_URL;
 const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
 

@@ -4,10 +4,6 @@ type CloverProps = {
   style?: React.CSSProperties;
 };
 
-/**
- * Four-leaf clover. Heart-shaped leaves with a soft notch at the outer
- * tip, arranged at the diagonals so the stem can come out the bottom.
- */
 export function Clover({ className, size = 36, style }: CloverProps) {
   return (
     <svg
@@ -27,10 +23,9 @@ export function Clover({ className, size = 36, style }: CloverProps) {
         fill="none"
       />
       <g fill="currentColor">
-        <Leaf rotation={45} />
-        <Leaf rotation={135} />
-        <Leaf rotation={225} />
-        <Leaf rotation={315} />
+        {[45, 135, 225, 315].map((r) => (
+          <Leaf key={r} rotation={r} />
+        ))}
       </g>
     </svg>
   );

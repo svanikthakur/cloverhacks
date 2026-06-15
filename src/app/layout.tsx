@@ -28,11 +28,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://cloverhacks.org"),
   title: "Clover Hacks: Get Lucky. Build Something.",
   description:
-    "Clover Hacks is a one-day high school hackathon where builders, designers, and dreamers come together to ship something worth bragging about.",
+    "A one-day hackathon for high schoolers. Spend 13 hours making something real with people who are just as into it as you are.",
   openGraph: {
     title: "Clover Hacks",
     description:
-      "A one-day hackathon for builders who want to get a little lucky.",
+      "A one-day high school hackathon. Bring an idea, leave with a project.",
     url: "https://cloverhacks.org",
     siteName: "Clover Hacks",
     type: "website",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Clover Hacks",
     description:
-      "A one-day hackathon for builders who want to get a little lucky.",
+      "A one-day high school hackathon. Bring an idea, leave with a project.",
   },
 };
 

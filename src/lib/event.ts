@@ -1,4 +1,4 @@
-export const EVENT = {
+export const event = {
   name: "Clover Hacks",
   tagline: "Get Lucky. Build Something.",
   startsAt: "2026-09-19T09:00:00-04:00",
@@ -13,7 +13,7 @@ export const EVENT = {
   },
 } as const;
 
-export const SPONSORSHIP_PACKAGES = [
+export const sponsorshipPackages = [
   {
     name: "Diamond",
     price: "$1,500 to $2,000",
@@ -56,28 +56,28 @@ export const SPONSORSHIP_PACKAGES = [
   },
 ];
 
-export const TRACKS = [
+export const tracks = [
   {
     title: "AI for Good",
     blurb:
-      "Use LLMs, agents, or classical ML to make life measurably better for a real community.",
+      "Use AI to actually help real people — your school, your neighborhood, a club, whoever. LLMs, agents, plain old ML, all fair game.",
     icon: "✨",
   },
   {
     title: "Game Dev",
     blurb:
-      "Build a game from scratch. 2D, 3D, browser, mobile, jam-style. Bonus points for replayability.",
+      "Make a game from scratch — 2D, 3D, web, mobile, whatever you can pull off in a day. Extra love for the ones we can't put down.",
     icon: "🎮",
   },
   {
     title: "Beginner Track",
     blurb:
-      "First hackathon? This one's for you. Beginner workshops, simpler scope, and a friendlier judging rubric.",
+      "First hackathon? Start here. Smaller scope, workshops to get you going, and judges who remember being new too.",
     icon: "🌱",
   },
 ];
 
-export const SCHEDULE: { day: string; items: { time: string; title: string }[] }[] = [
+export const schedule: { day: string; items: { time: string; title: string }[] }[] = [
   {
     day: "Morning",
     items: [
@@ -104,25 +104,25 @@ export const SCHEDULE: { day: string; items: { time: string; title: string }[] }
   },
 ];
 
-export const FAQ = [
+export const faq = [
   {
     q: "Who can attend?",
-    a: "Any high school student. No experience required, we love first-timers.",
+    a: "Any high schooler. Zero experience needed — first-timers are kind of our whole thing.",
   },
   {
     q: "How much does it cost?",
-    a: "Nothing. Clover Hacks is completely free, including food and swag.",
+    a: "Nothing. It's free top to bottom — food and swag included.",
   },
   {
     q: "Do I need a team?",
-    a: "If you have one, great. If not, we'll help you find a team during opening ceremony.",
+    a: "Nope. Bring one if you've got it, or find people at team formation right after the opening ceremony.",
   },
   {
     q: "What should I bring?",
-    a: "A laptop, charger, and anything else to help you with your project. We provide the rest.",
+    a: "A laptop, your charger, and whatever else helps you build. We've got the rest covered.",
   },
   {
     q: "Will there be prizes?",
-    a: "Yes. Top overall, best in each track, and a few sponsor categories. Details drop closer to the event.",
+    a: "Yep — best overall, a winner per track, and a few sponsor categories. We'll post the full list closer to the day.",
   },
 ];

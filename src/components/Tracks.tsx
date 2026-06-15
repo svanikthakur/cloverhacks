@@ -1,4 +1,4 @@
-import { TRACKS } from "@/lib/event";
+import { tracks } from "@/lib/event";
 
 export function Tracks() {
   return (
@@ -17,7 +17,7 @@ export function Tracks() {
         </div>
 
         <ul className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {TRACKS.map((t) => (
+          {tracks.map((t) => (
             <li
               key={t.title}
               className="group relative overflow-hidden rounded-2xl border border-white/10 bg-card p-6 hover:border-clover/40 transition-colors"

@@ -1,10 +1,8 @@
 import crypto from "node:crypto";
 import { cookies } from "next/headers";
 
-// Simple single-password gate for the organizer's admin dashboard.
-// Set ADMIN_PASSWORD in .env.local (a default is used in dev with a warning).
-const COOKIE_NAME = "clover_admin";
-const COOKIE_MAX_AGE = 60 * 60 * 24 * 7; // 7 days
+const cookieName = "clover_admin";
+const cookieMaxAge = 60 * 60 * 24 * 7;
 
 function adminPassword(): string {
   const pw = process.env.ADMIN_PASSWORD;
@@ -17,8 +15,6 @@ function adminPassword(): string {
   return pw;
 }
 
-// The cookie never stores the password itself, only a token derived from it.
-// Without knowing the password the token can't be forged.
 function sessionToken(): string {
   return crypto
     .createHmac("sha256", adminPassword())
@@ -34,23 +30,23 @@ export function checkPassword(input: string): boolean {
 
 export async function startAdminSession(): Promise<void> {
   const store = await cookies();
-  store.set(COOKIE_NAME, sessionToken(), {
+  store.set(cookieName, sessionToken(), {
     httpOnly: true,
     sameSite: "lax",
     path: "/",
     secure: process.env.NODE_ENV === "production",
-    maxAge: COOKIE_MAX_AGE,
+    maxAge: cookieMaxAge,
   });
 }
 
 export async function endAdminSession(): Promise<void> {
   const store = await cookies();
-  store.delete(COOKIE_NAME);
+  store.delete(cookieName);
 }
 
 export async function isAdmin(): Promise<boolean> {
   const store = await cookies();
-  const token = store.get(COOKIE_NAME)?.value;
+  const token = store.get(cookieName)?.value;
   if (!token) return false;
   const expected = sessionToken();
   const a = Buffer.from(token);

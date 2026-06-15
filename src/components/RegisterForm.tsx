@@ -29,8 +29,8 @@ export function RegisterForm({
           You&apos;re in{state.name ? `, ${state.name.split(" ")[0]}` : ""}! 🍀
         </h2>
         <p className="mt-3 text-muted max-w-md mx-auto">
-          Your spot is saved. We&apos;ll email you with details as the event gets
-          closer. Now go get lucky.
+          You&apos;re on the list. We&apos;ll email you the details as the day gets
+          closer. See you there.
         </p>
         <Link
           href="/"

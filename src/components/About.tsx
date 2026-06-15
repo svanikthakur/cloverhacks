@@ -1,15 +1,15 @@
 const POINTS = [
   {
-    title: "Built for first-timers",
-    body: "Beginner workshops, a dedicated track, and a friendlier judging rubric so your first hackathon doesn't feel like jumping into the deep end.",
+    title: "Made for first-timers",
+    body: "Never been to a hackathon? Good. We run beginner workshops, keep a track just for newcomers, and grade first projects on a gentler curve.",
   },
   {
-    title: "Zero cost, all in",
-    body: "Free admission, food, and swag. Just bring your laptop and your ideas.",
+    title: "Free, actually free",
+    body: "Admission, food, and swag are all on us. Show up with a laptop and something you want to make.",
   },
   {
-    title: "Ship something real",
-    body: "We care more about a working demo than a polished slide deck. Build something you'd actually use Monday morning.",
+    title: "Build, don't pitch",
+    body: "We'd rather see a rough demo that works than a perfect slide deck. Make something you'd actually open again next week.",
   },
 ];
 
@@ -23,13 +23,12 @@ export function About() {
               About
             </p>
             <h2 className="mt-3 font-display text-4xl md:text-5xl font-semibold tracking-tight">
-              A weekend that actually feels lucky.
+              A hackathon that doesn&apos;t take itself too seriously.
             </h2>
             <p className="mt-6 text-muted text-lg leading-relaxed">
-              Most hackathons feel like a sprint. Clover Hacks is more like a tiny
-              festival. One day of building, eating, occasional panicking,
-              and meeting the kind of people who say &ldquo;wait, what if we just&hellip;&rdquo;
-              and mean it.
+              Most hackathons feel like a race. This one feels more like a really
+              productive party. You get a day to build, eat, get a little stuck,
+              and figure it out next to people who are just as excited as you are.
             </p>
           </div>
 

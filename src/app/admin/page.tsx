@@ -9,7 +9,6 @@ export const metadata: Metadata = {
   robots: { index: false },
 };
 
-// Always read fresh from disk; never statically cache the dashboard.
 export const dynamic = "force-dynamic";
 
 export default async function AdminPage() {

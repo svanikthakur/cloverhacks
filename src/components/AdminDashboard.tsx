@@ -14,7 +14,6 @@ function StatTile({ label, value }: { label: string; value: number | string }) {
 }
 
 function formatDate(iso: string): string {
-  // Stable, locale-independent label (avoids hydration mismatch).
   const d = new Date(iso);
   const months = [
     "Jan", "Feb", "Mar", "Apr", "May", "Jun",

@@ -47,8 +47,6 @@ export async function registerSignup(
   return { ok: true, name };
 }
 
-// --- Admin ---
-
 export type LoginState = { error?: string };
 
 export async function adminLogin(

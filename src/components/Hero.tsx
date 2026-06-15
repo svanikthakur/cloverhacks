@@ -1,8 +1,8 @@
 import type { CSSProperties } from "react";
 import { Clover } from "./Clover";
-import { EVENT } from "@/lib/event";
+import { event } from "@/lib/event";
 
-const eventDate = new Date(EVENT.startsAt);
+const eventDate = new Date(event.startsAt);
 const dateLabel = eventDate.toLocaleDateString("en-US", {
   month: "long",
   day: "numeric",
@@ -45,13 +45,13 @@ export function Hero() {
         </h1>
 
         <p className="mt-6 mx-auto max-w-2xl text-lg md:text-xl text-muted">
-          Clover Hacks is a one-day high school hackathon where builders, designers,
-          and dreamers come together to ship something worth bragging about.
+          A one-day hackathon for high schoolers. Spend 13 hours building
+          something real with people who are just as into it as you are.
         </p>
 
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href={EVENT.applyUrl}
+            href={event.applyUrl}
             className="inline-flex items-center gap-2 rounded-full bg-clover text-[#06160e] px-6 py-3 font-semibold hover:bg-clover/90 transition-colors shadow-[0_0_40px_-8px_var(--clover-glow)]"
           >
             Apply to hack
@@ -67,7 +67,7 @@ export function Hero() {
 
         <dl className="mt-16 grid grid-cols-3 gap-4 max-w-2xl mx-auto text-left">
           <Stat label="When" value={dateLabel} />
-          <Stat label="Where" value={EVENT.location} />
+          <Stat label="Where" value={event.location} />
           <Stat label="Hours" value="9 AM – 10 PM" />
         </dl>
       </div>

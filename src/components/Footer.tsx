@@ -1,5 +1,5 @@
 import { Clover } from "./Clover";
-import { EVENT } from "@/lib/event";
+import { event } from "@/lib/event";
 
 export function Footer() {
   return (
@@ -16,7 +16,7 @@ export function Footer() {
         <ul className="flex items-center gap-6 text-sm text-muted">
           <li>
             <a
-              href={EVENT.socials.instagram}
+              href={event.socials.instagram}
               className="hover:text-foreground transition-colors"
             >
               Instagram
@@ -24,7 +24,7 @@ export function Footer() {
           </li>
           <li>
             <a
-              href={EVENT.socials.discord}
+              href={event.socials.discord}
               className="hover:text-foreground transition-colors"
             >
               Discord
@@ -32,7 +32,7 @@ export function Footer() {
           </li>
           <li>
             <a
-              href={EVENT.socials.email}
+              href={event.socials.email}
               className="hover:text-foreground transition-colors"
             >
               Email

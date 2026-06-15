@@ -14,10 +14,7 @@ export type Signup = {
 
 export type NewSignup = Omit<Signup, "id" | "createdAt">;
 
-// Signups live in a Supabase (Postgres) table named `signups`. This persists
-// in production no matter where the app is deployed. The rest of the app only
-// touches the functions below, so the storage backend stays isolated here.
-const TABLE = "signups";
+const table = "signups";
 
 type Row = {
   id: string;
@@ -31,23 +28,13 @@ type Row = {
   created_at: string;
 };
 
-function fromRow(r: Row): Signup {
-  return {
-    id: r.id,
-    name: r.name,
-    email: r.email,
-    school: r.school,
-    grade: r.grade,
-    track: r.track,
-    experience: r.experience,
-    dietary: r.dietary,
-    createdAt: r.created_at,
-  };
+function fromRow({ created_at, ...rest }: Row): Signup {
+  return { ...rest, createdAt: created_at };
 }
 
 export async function getSignups(): Promise<Signup[]> {
   const { data, error } = await supabase
-    .from(TABLE)
+    .from(table)
     .select("*")
     .order("created_at", { ascending: false });
   if (error) throw new Error(`Failed to load signups: ${error.message}`);
@@ -56,16 +43,8 @@ export async function getSignups(): Promise<Signup[]> {
 
 export async function addSignup(data: NewSignup): Promise<Signup> {
   const { data: row, error } = await supabase
-    .from(TABLE)
-    .insert({
-      name: data.name,
-      email: data.email,
-      school: data.school,
-      grade: data.grade,
-      track: data.track,
-      experience: data.experience,
-      dietary: data.dietary,
-    })
+    .from(table)
+    .insert(data)
     .select()
     .single();
   if (error) throw new Error(`Failed to save signup: ${error.message}`);
@@ -73,14 +52,14 @@ export async function addSignup(data: NewSignup): Promise<Signup> {
 }
 
 export async function deleteSignup(id: string): Promise<void> {
-  const { error } = await supabase.from(TABLE).delete().eq("id", id);
+  const { error } = await supabase.from(table).delete().eq("id", id);
   if (error) throw new Error(`Failed to delete signup: ${error.message}`);
 }
 
 export async function hasEmail(email: string): Promise<boolean> {
   const normalized = email.trim();
   const { data, error } = await supabase
-    .from(TABLE)
+    .from(table)
     .select("id")
     .ilike("email", normalized)
     .limit(1);

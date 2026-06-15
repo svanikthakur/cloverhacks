@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Clover } from "./Clover";
-import { EVENT } from "@/lib/event";
+import { event } from "@/lib/event";
 
 const links = [
   { href: "#about", label: "About" },
@@ -32,7 +32,7 @@ export function Nav() {
         </ul>
 
         <a
-          href={EVENT.applyUrl}
+          href={event.applyUrl}
           className="inline-flex items-center gap-2 rounded-full bg-clover text-[#06160e] px-4 py-2 text-sm font-semibold hover:bg-clover/90 transition-colors"
         >
           Register

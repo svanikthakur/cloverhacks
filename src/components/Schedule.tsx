@@ -1,4 +1,4 @@
-import { SCHEDULE } from "@/lib/event";
+import { schedule } from "@/lib/event";
 
 export function Schedule() {
   return (
@@ -12,12 +12,12 @@ export function Schedule() {
             One day, packed.
           </h2>
           <p className="mt-4 text-muted text-lg">
-            Tentative. The only thing guaranteed is the food and the chaos.
+            Still tentative. The times might move around; the food won&apos;t.
           </p>
         </div>
 
         <div className="mt-14 grid gap-10 md:grid-cols-2">
-          {SCHEDULE.map((day) => (
+          {schedule.map((day) => (
             <div key={day.day}>
               <h3 className="font-display text-2xl font-semibold mb-6 flex items-center gap-3">
                 {day.day}

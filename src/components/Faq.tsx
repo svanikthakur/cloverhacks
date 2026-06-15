@@ -1,4 +1,4 @@
-import { FAQ } from "@/lib/event";
+import { faq } from "@/lib/event";
 
 export function Faq() {
   return (
@@ -14,7 +14,7 @@ export function Faq() {
         </div>
 
         <ul className="mt-12 space-y-3">
-          {FAQ.map((item) => (
+          {faq.map((item) => (
             <li
               key={item.q}
               className="rounded-2xl border border-white/10 bg-card overflow-hidden"
